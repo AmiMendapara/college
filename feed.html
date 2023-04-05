@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Edukate - Online Education Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    div.formContainer {
+  margin: 4em auto 4em auto;
+  width: 80%;
+  color: grey;
+  }
+
+div.heading {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  padding: 1em 0 1em 0;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  background-color: gray;
+  color: #fff;
+}
+
+div.form {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  background-color: grey;
+}
+
+div.form form {
+  margin: 0 auto 0 auto;
+  width: 80%;
+}
+
+div.form label {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1em auto;
+  outline: none;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 0.1;
+}
+
+div.form input {
+  display: block;
+  width: 80%;
+  height: 2em;
+  margin: 1em auto 1em auto;
+  outline: none;
+  color: gray;
+  padding: 1.2em 0 1em 1.2em;
+  background-color: #fff;
+  border: 0.5px solid gray;
+}
+
+div.form textarea {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1em auto;
+  outline: none;
+  color: gray;
+  padding: 1.2em 0 1em 1.2em;
+  background-color: #fff;
+  border: 0.5px solid gray;
+  height: 6em;
+  resize: none;
+}
+
+div.form button {
+  outline: none;
+  margin: 2em auto 2em auto;
+  padding: 2em;
+  cursor: pointer;
+  border: none;
+  display: block;
+  width: 35%;
+  height: 5em;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+div.form input:active,
+div.form input:focus,
+div.form select:active,
+div.form select:focus,
+div.form textarea:active,
+div.form textarea:focus,
+div.form button:active,
+div.form button:hover {
+  box-shadow: 0 0 2px 2px white;
+}
+
+div.form button {
+  background-color: #fff;
+  color: gray;
+  font-weight: bolder;
+  transition: all 0.2s linear;
+}
+
+@keyframes status {
+  from {
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+div.statusActive {
+  display: block;
+  width: 80%;
+  margin: 1em auto 1em auto;
+  padding: 1.2em 0 1em 1.2em;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  animation-name: status;
+  animation-duration: 0.3s;
+  transition: all 0.2s linear;
+}
+
+div.loadingActive {
+  width: 90%;
+  margin: 4em auto 4em auto;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  display: grid;
+  transition: all linear 0.2s;
+}
+
+div.loadingActive div {
+  padding: 0.5em;
+  background-color: gray;
+  animation-name: rotatingDiv;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotatingDiv {
+  from {
+      transform: rotate(-180deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  div.formContainer {
+      width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  div.formContainer {
+      width: 500px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  div.formContainer {
+      width: 80%;
+  }
+}
+</style>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+919876543210</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>college@example.com</small>
+                </div>
+            </div>
+                    </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Education</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="course.html" class="nav-item nav-link">Courses</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+					<a href="login.html" class="nav-item nav-link">Login</a>
+					<a href="reg.html" class="nav-item nav-link">Registration</a>
+                    <a href="feed.html" class="nav-item nav-link active">Feedback</a>
+                </div>
+                
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-1">Feedback</h1>
+            <div class="d-inline-flex text-white mb-5">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Feedback</p>
+            </div>
+            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- feed Start -->
+    <div class="formContainer">
+        <div class="heading">
+            FEEDBACK FORM 
+        </div>
+        
+        <div class="form">
+            <form id="form">
+                <label>Name</label>
+                <input  type="text"  placeholder="Name" />
+                <label>Email</label>
+                <input  type="email" placeholder="Email"/>
+                <label>Contact No</label>
+                <input  type="text" placeholder="Contact No" />
+                <label>Feedback</label>
+                <textarea placeholder="Feedback"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+        <div id="loading">
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <div id="status">
+
+        </div>
+
+    </div>
+    <!-- feed End -->
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-white mb-4">Our Courses</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="bca.html"><i class="fa fa-angle-right mr-2"></i>BCA</a>
+                        <a class="text-white-50 mb-2" href="mca.html"><i class="fa fa-angle-right mr-2"></i>MCA</a>
+                        <a class="text-white-50 mb-2" href="bsc.html"><i class="fa fa-angle-right mr-2"></i>Bsc(IT)</a>
+                        <a class="text-white-50 mb-2" href="msc.html"><i class="fa fa-angle-right mr-2"></i>Msc(IT)</a>
+                        <a class="text-white-50 mb-2" href="bba.html"><i class="fa fa-angle-right mr-2"></i>BBA</a>
+                        <a class="text-white-50 mb-2" href="mba.html"><i class="fa fa-angle-right mr-2"></i>MBA</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Junagadh</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+919876543210</p>
+                    <p><i class="fa fa-envelope mr-2"></i>college@example.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
